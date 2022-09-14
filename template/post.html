@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} BlogPost {% endblock title %}
+{% block contain %}
+
+<div class="container m-4 ">
+        <h2 class="blog-post-title">{{post.title}}</h2>
+        <p class="blog-post-meta">{{post.date}}</p>
+
+        <p>{{post.content}}</p>
+        </div>
+{% endblock %}
